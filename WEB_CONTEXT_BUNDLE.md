@@ -208,72 +208,97 @@ This file is generated from repository truth and bounded for the web channel. It
     "acceptance": {
       "policy": "solution-admission-v1"
     },
-    "aliases": [],
+    "aliases": [
+      "Open Problem Garden OPG-37619"
+    ],
     "allowed_axioms": [
-      "none"
+      "finite-graph-basic",
+      "planar-graph-basic",
+      "real-analysis-basic"
     ],
     "assumptions": [
-      "This record must never be treated as an active research problem."
+      "All graphs and digraphs are finite and simple unless the statement explicitly says otherwise."
     ],
     "constraints": {
       "allowed_adapters": [
-        "template-validation-v1"
+        "circular-list-coloring-sat-v1",
+        "lean-obligation-v1"
       ],
       "allowed_methods": [
-        "discovery"
+        "discovery",
+        "derivation",
+        "computation",
+        "proof",
+        "formalization"
       ],
-      "max_attempts": 1,
+      "max_attempts": 20,
       "runtime": {
-        "max_output_bytes": 65536,
-        "max_retries": 1,
-        "max_transitions": 10,
-        "timeout_seconds": 60
+        "max_output_bytes": 5242880,
+        "max_retries": 3,
+        "max_transitions": 300,
+        "timeout_seconds": 1800
       }
     },
-    "created_at": "2026-09-06T00:00:00Z",
+    "created_at": "2026-09-06T04:47:54Z",
     "definitions": [
       {
-        "definition": "A non-admitted draft record used only to validate the physical public repository template.",
-        "term": "template placeholder"
+        "definition": "For integers p≥2q>0, a map c:V(G)→Z_p such that the cyclic distance between colors of adjacent vertices is at least q.",
+        "term": "(p,q)-coloring"
+      },
+      {
+        "definition": "A list assignment L with L(v)⊆Z_p and |L(v)|≥tq at every vertex.",
+        "term": "t-(p,q)-list assignment"
+      },
+      {
+        "definition": "The infimum of real t such that G is colorable from every t-(p,q)-list assignment for every pair p≥2q>0.",
+        "term": "circular choice number cch(G)"
       }
     ],
     "domain": {
-      "description": "Template-only placeholder domain; not a mathematical research question.",
+      "description": "Finite simple planar graphs with circular list colorings.",
       "objects": [
-        "template-placeholder"
+        "planar graph",
+        "circular list coloring",
+        "circular choice number"
       ]
     },
-    "lifecycle": "draft",
+    "lifecycle": "active",
     "msc": [
-      "00A00"
+      "05C15"
     ],
-    "problem_id": "problem:template-placeholder",
+    "problem_id": "problem:opg-37619-circular-choosability-planar",
     "quantifiers": [
       {
-        "domain": "a reviewed public canonical ProblemContract supplied by the repository builder",
-        "kind": "find",
+        "domain": "real constants that upper-bound cch(G) for every finite simple planar graph G",
+        "kind": "optimize",
         "variables": [
-          "replacement_problem"
+          "C"
         ]
       }
     ],
     "schema_version": "1.0.0",
     "sources": [
       {
-        "retrieved_at": "2026-09-06T00:00:00Z",
-        "source": "Vibe Mathing public Web Harness",
-        "source_record_id": "public-template-placeholder-v1",
-        "url": "https://github.com/vibemathing/vibe-mathing-problem-public-template"
+        "retrieved_at": "2026-09-02T00:06:43Z",
+        "source": "UnsolvedMath",
+        "source_record_id": "unsolvedmath-opg-37619-e97de9699b8f",
+        "url": "https://www.unsolvedmath.com/problems/OPG-37619"
+      },
+      {
+        "retrieved_at": "2026-09-06T04:47:54Z",
+        "source": "current-status-review",
+        "source_record_id": null,
+        "url": "https://www.openproblemgarden.org/op/circular_choosability_of_planar_graphs"
       }
     ],
     "statement": {
       "language": "en",
-      "text": "This is a non-research placeholder. Replace it with exactly one reviewed public ProblemContract before creating a public problem repository.",
+      "text": "Determine the least real constant C such that every finite simple planar graph G has circular choice number cch(G) at most C.",
       "version": 1
     },
-    "title": "Vibe Mathing public problem repository template placeholder",
-    "updated_at": "2026-09-06T00:00:00Z"
+    "title": "Circular choosability of planar graphs",
+    "updated_at": "2026-09-06T04:47:54Z"
   },
-  "problem_contract_sha256": "e64cd03254e03dd661eade23243c3c21793fc2d8bffa2d33c172cf8ed2e7f940"
+  "problem_contract_sha256": "a48afc110ff607714623e0251237da00d7002632237903ca8e40cfc9cb6cfc0a"
 }
 ```
