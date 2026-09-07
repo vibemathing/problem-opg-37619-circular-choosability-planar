@@ -1,0 +1,26 @@
+{
+  "entries": [
+    {
+      "harness_snapshot_sha256": "50d94b3f326af5f992f12a2d60c32a0eceb1a718ee89494f4ddf789f7c22f338",
+      "harness_version": "1.1.0",
+      "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+      "source_manifest_sha256": "7dfdb41a68bfda314d663ba03b4b2a713ea194168ade5287e58c6434be5cc4fb",
+      "tree_sha256": "fc045691b9e870d32d98575e61eddc44089eda0ab2978fd0cc8d6b48fb8f3e90"
+    },
+    {
+      "harness_snapshot_sha256": "7e36479cbaadd09c8a449abde92b253cd91d6f5967e12cfdc8005bc305b249f8",
+      "harness_version": "1.2.4",
+      "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+      "source_manifest_sha256": "fedd664f1ac16c5232eb05076b73f2bab566ed672840e7f2af851c77253813b3",
+      "tree_sha256": "6ec3c1bbade9cd120d34465e248b775404f7ef15ede3abbaeaf9d83eacb0a21a"
+    }
+  ],
+  "repository": "vibemathing/problem-opg-37619-circular-choosability-planar",
+  "repository_identity": {
+    "database_id": 1358797691,
+    "default_branch": "main",
+    "node_id": "R_kgDOUP2bew",
+    "visibility": "public"
+  },
+  "schema_version": "1.0.0"
+}
